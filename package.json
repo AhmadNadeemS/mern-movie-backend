@@ -4,7 +4,8 @@
   "description": "Movie",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "author": "Ahmad Nadeem",
   "license": "ISC",
@@ -24,8 +25,11 @@
     "multer": "^1.4.5-lts.1",
     "nodemailer": "^6.7.5"
   },
-    "engines": {
-        "node": "16.x",
-        "npm": "8.x",
-    }
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "engines": {
+    "node": "14.x",
+    "npm": "8.x"
+  }
 }
