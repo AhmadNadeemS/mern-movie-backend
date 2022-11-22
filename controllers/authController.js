@@ -31,8 +31,8 @@ exports.createUser = async (req, res) => {
     host: "smtp.mailtrap.io",
     port: 2525,
     auth: {
-      user: "0360bc3ddf7784",
-      pass: "6689c5073af093",
+      user: process.env.MAIL_TRAP_USER,
+      pass: process.env.MAIL_TRAP_PASS,
     },
   });
   transport.sendMail({
@@ -82,8 +82,8 @@ exports.resendEmailVerification = async (req, res) => {
     host: "smtp.mailtrap.io",
     port: 2525,
     auth: {
-      user: "0360bc3ddf7784",
-      pass: "6689c5073af093",
+      user: process.env.MAIL_TRAP_USER,
+      pass: process.env.MAIL_TRAP_PASS,
     },
   });
   transport.sendMail({
@@ -201,8 +201,8 @@ exports.forgotPassword = async (req, res) => {
     host: "smtp.mailtrap.io",
     port: 2525,
     auth: {
-      user: "0360bc3ddf7784",
-      pass: "6689c5073af093",
+      user: process.env.MAIL_TRAP_USER,
+      pass: process.env.MAIL_TRAP_PASS,
     },
   });
 
